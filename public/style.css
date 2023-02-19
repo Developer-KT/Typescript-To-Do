@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #0B061D;
+}
+
+header {
+    display: flex;
+    height: 300px;
+    background-color: #C16BD7;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    position: relative;
+}
+.logo h1 {
+    font-family: montserrat;
+    letter-spacing: 6px;
+    color: white;
+    font-weight: 500;
+    position: absolute;
+    top: 120px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    height: 10%;
+}
+
+#nav-tabs {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-family: montserrat;
+    justify-content: space-evenly;
+    background-color: #191332;
+    color: white;
+    width: 70%;
+    height: 60px;
+}
+.tab {
+    transition: 0.6s;
+    padding: 20px;
+}
+.tab:hover {
+    cursor: pointer;
+    color: #C16BD7;
+}
+
+.task-section {
+    display: grid;
+    justify-content: center;
+    font-family: poppins;
+    width: 100%;
+    position: absolute;
+    top: 185px;
+    background-color: transparent;
+}
+
+.tasks {
+    background-color: #191332;
+    padding: 40px 50px 20px 50px;
+    min-height: 325px;
+
+}
+
+#list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    justify-content: start;
+    align-items: center;
+    color: white;
+}
+
+#list li {
+    margin-bottom: 10px;
+}
+
+#new-task-form {
+    display: flex;
+    margin-bottom: 30px;
+    width: 805px;
+    position: relative;
+}
+
+#new-task-form input {
+    font-family: poppins;
+    letter-spacing: 3px;
+    width: 100%;
+    background-color: #191332;
+    border: none;
+    height: 50px;
+    color: white;
+    padding-left: 20px;
+}
+
+#new-task-form input:focus {
+    background-color: #191332;
+}
+
+#new-task-title {
+    padding: 10px 10px;
+}
+
+#new-task-form button {
+    position: absolute;
+    top: 10.5px;
+    right: 10px;
+    height: 28px;
+    width: 50px;
+    font-size: 14px;
+    font-family: poppins;
+    border: none;
+    border-radius: 3px;
+    background-color: white;
+}

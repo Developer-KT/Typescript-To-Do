@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <header> 
+    <div class="logo">
+      <h1>TODO</h1>
+    </div>
+    <nav>
+      <ul id="nav-tabs">
+        <li class="tab">Home</li>
+        <li class="tab">Store</li>
+        <li class="tab">About</li>
+        <li class="tab">Contact</li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="task-section">
+    <form id="new-task-form">
+      <input type="text" placeholder="Create a new todo..." id="new-task-title">
+      <button type="submit" id="add-btn">Add</button>
+    </form>
+    <div class="tasks">
+      <ul id="list"></ul>
+    </div>
+  </div>
+
+  <script src="dist/index.js" type="module"></script>
+</body>
+</html>
